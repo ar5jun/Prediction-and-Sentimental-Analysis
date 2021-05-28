@@ -10,7 +10,6 @@ contextlib2==0.6.0.post1
 cryptography==2.1.4
 cycler==0.10.0
 distlib==0.3.1
-distribute==0.6.28
 djangorestframework==3.9.4
 enum34==1.1.6
 Faker==3.0.1
