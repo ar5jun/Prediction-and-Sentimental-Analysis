@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 import pickle
 import string
+import numpy
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 app = Flask(__name__)
