@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Indian Election Analysis 2019</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+
+  <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../static/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: BizLand - v3.1.0
+  * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i><a href="#">ICT Acadamy of Kerala</a></i>
+        <!--<i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>-->
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="{{ url_for('home') }}">Election Analysis<span>.</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="{{ url_for('home') }}">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="{{ url_for('graphs') }}">Graphs and Figures</a></li>
+          <li><a class="nav-link scrollto " href="{{ url_for('twitter') }}">Twitter Analysis</a></li>
+          <!--<li><a class="nav-link scrollto " href="#prediction">Model Prediction</a></li>-->
+         
+          <li class="dropdown"><a href="#"><span>Model Prediction</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="{{ url_for('sentiment_analysis') }}">Sentimental Analysis</a></li>
+              <li><a href="{{ url_for('prediction') }}">Result Prediction</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="{{ url_for('team') }}">Team</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center" style="background-image: url('../static/img/maskvote.jpeg');">
+    
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+     
+      <h1>Indian <span>Election</span></h1>
+      <h2>Analysing Loksabha Election</h2>
+        <a href="#about" class="btn-get-started scrollto">Overview</a>
+      <!--<div class="d-flex">
+        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>-->
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-bar-chart-fill"></i></div>
+              <h4 class="title"><a href="{{ url_for('graphs') }}">Graphs and Figures</a></h4>
+              <p class="description">A story through graphs</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bi bi-twitter"></i></div>
+              <h4 class="title"><a href="{{ url_for('twitter') }}">Twitter Analysis</a></h4>
+              <p class="description">Learn how twitter sentiment analysis helps predictions</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2></h2>
+          <h3>Indian Election : <span>An Overview</span></h3>
+
+        </div>
+        <div>
+          <p>Indian General Elections is the world’s largest democratic exercise which elects the members to the House
+            of People or the lower house of the parliament- Lok Sabha. It is conducted once every five years</p>
+          
+          <p>India is the largest democracy in the world and it provides its countrymen the freedom to choose their
+            government. There are two levels of elections, one at the Parliamentary level which elects the members to
+            the Lok Sabha and the other at the Assembly or State level which decides on the respective state
+            governments. The general elections are held every five years and it is very crucial for the country. The
+            recent elections were held in 2019, where the Narendra Modi led NDA government came to power for the second
+            time. This election was different from the previous ones with respect to the impact of digitalisation and
+            data analytics. Different political parties and their strategists performed rigorous analysis to gather
+            information on the political wind in the country and to boost communication with the voters. This helped
+            them to introduce suitable campaign methodologies.
+          </p>
+          <p>The election process involves rigorous campaigning and every political party targets the voting population
+            through various mediums like road shows, one-to-one meetings, mass gatherings etc. But, in recent years, the
+            trend has slowly shifted to social media as well. Among them, twitter has received widespread popularity
+            among both the contestants and the common man. It has given them a platform to exchange their views and
+            opinions seamlessly. The tweets are representative of the political opinions of people and analysing them
+            can derive useful insights. It can help to predict the result of an impending election. </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <img src="../static/img/about2019.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up"
+            data-aos-delay="100">
+            <h3>About the Project.</h3>
+            <p class="fst-italic">
+              This project comes under the domain of election and polling. The use of data analytics and machine
+              learning are well identified in this domain as more and more political parties are employing these
+              techniques to get a grasp of their vote share in future. It is already in place in many countries in the
+              world including India. The recent elections in India have made use of full fledged data analytics to
+              gather information on the voter sentiment and to frame appropriate election agendas. .
+            </p>
+            <ul>
+              <li>
+                 <!--<i class="bx bx-store-alt"></i>
+                <div>
+                 <h5>Detailed Defenitions</h5>
+                  <p>Detailed Defenitions</p>
+                </div>
+              </li>
+              <li>
+                <i class="bx bx-images"></i>
+                <div>
+                  <h5>Detailed Defenitions</h5>
+                  <p>Detailed Defenitions</p>
+                </div>
+              </li>-->
+            </ul>
+            
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+
+
+
+
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Team 8</span></strong>. All Rights Reserved
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="../static/vendor/aos/aos.js"></script>
+    <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../static/vendor/php-email-form/validate.js"></script>
+    <script src="../static/vendor/purecounter/purecounter.js"></script>
+    <script src="../static/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../static/vendor/waypoints/noframework.waypoints.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../static/js/main.js"></script>
+
+</body>
+
+</html>

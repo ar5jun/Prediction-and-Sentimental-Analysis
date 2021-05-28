@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Indian Election Analysis 2019</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+
+    <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../static/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../static/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: BizLand - v3.1.0
+  * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Top Bar ======= -->
+    <section id="topbar" class="d-flex align-items-center">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+            <div class="contact-info d-flex align-items-center">
+                <i><a href="mailto:contact@example.com">ICT Acadamy of Kerala</a></i>
+
+            </div>
+            <div class="social-links d-none d-md-flex align-items-center">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <h1 class="logo"><a href="{{ url_for('home') }}">Election Analysis<span>.</span></a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto" href="{{ url_for('home') }}">Home</a></li>
+
+                    <li><a class="nav-link scrollto" href="{{ url_for('graphs') }}">Graphs and Figures</a></li>
+                    <li><a class="nav-link scrollto active" href="{{ url_for('twitter') }}">Twitter Analysis</a></li>
+                    <!--<li><a class="nav-link scrollto " href="#prediction">Model Prediction</a></li>-->
+
+                    <li class="dropdown"><a href="#"><span>Model Prediction</span> <i
+                                class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="{{ url_for('sentiment_analysis') }}">Sentimental Analysis</a></li>
+                            <li><a href="{{ url_for('prediction') }}">Result Prediction</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="{{ url_for('team') }}">Team</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+
+        <!-- ======= Featured Services Section ======= -->
+
+
+        <!-- ======= About Section ======= -->
+
+        <section id="about" class="about section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    
+                    <h3>Twitter <span>Sentiment Analysis</span></h3><br>
+
+                </div>
+                <div>
+                    <h5><b><u>Twitter Sentiment Analysis in Politics</u></b></h5><br>
+                    <p>The popularity of Twitter platform in political scenarios is evident from the exponential growth
+                        in the Twitter subscribers during elections. As an example in India, Twitter content related to
+                        Lok Sabha elections recorded around 583 per cent growth between 2014 and 2019. Although,
+                        majority of people sharing their opinions on Twitter are from urban backgrounds or in places
+                        where there is internet connectivity and people are indulging in social media, this represents
+                        the opinion of the whole country in many ways.
+                        There are various approaches like the volumetric approach, sentiment approach, and social
+                        network analysis approach that can predict election results through social media.The volumetric
+                        approach, considers the volume of online followers, likes, and posts shared about an individual
+                        party or electoral for predicting election results. In the sentiment analysis approach, an
+                        aggregate of positive and negative sentiments of online posts about an electoral or political
+                        party is considered for election prediction. In the social network analysis approach, the
+                        networks of social media users who are supporting or discussing a couple of electoral or
+                        political parties are analyzed.
+
+                    </p>
+
+                    <p><br>
+                    <h5><b><u> Popularity of Twitter Platform in Election Prediction</u></b></h5><br>
+
+                    Twitter platform is a preferred choice in social media based sentiment analysis due to the
+                    restriction on the text content per tweet and hence an ease of analysis compared to other platforms.
+                    Politics is increasingly becoming a hot topic of critical analysis in social media and Twitter hosts
+                    a huge collection of opinions in this domain. Sentiment Analysis plays a big role in these posts
+                    since it helps to decide the sentiment of people towards a specific political party or candidate and
+                    hence the success or failure probabilities. This is really helpful for the parties to gear up their
+                    election campaigns in a better way. This also helps people to grasp the sentiment which their fellow
+                    citizens feel for a party. Also, For instance, if anyone wants to predict any election results, the
+                    survey is conducted by going through a restricted group of individuals and asking their views on
+                    different electoral and their respective political parties. Further results are evaluated on the
+                    grounds of their opinions, and prediction of election results is done. All this process of the
+                    offline survey cost so much while considering manpower, time, and money. It can, therefore, be
+                    safely concluded that election prediction from social media platforms covers a varied and extensive
+                    population, and save both time and men’s efforts.
+
+                    </p>
+
+                    <br>
+                    <h5><b><u>The Future of Big Data Analytics in Elections</u></b></h5><br>
+                    <p>
+                        If current trends are any indication, future election campaigns will be further entrenched in
+                        data analysis methods so as to glean the best approaches, efforts and results. Data analytics
+                        will be used much after the campaigns as well, with it being an integral part of understanding
+                        and flagging problems plaguing different population sections. Data analytics has evolved itself
+                        to become the brain of every election campaign since the early 2000s. Data analytics helps the
+                        election campaign committee understand the voters better and adapt their policies to their
+                        sentiments, demonstrating the versatility of analytics platforms.
+
+                    </p>
+
+                    <br>
+                    <h5><b><u>Big Data Analytics at Play in India’s General Elections 2019</u></b></h5><br>
+                    <p>
+                        Political parties and their IT cells were leveraging big data analytics to reach out to the
+                        voters with appropriate messaging in General Elections 2019.In the general elections 2019 in
+                        India, technology made it easier for political parties to gauge the mood of the voters and put
+                        their best message forward. Political parties were leveraging big data analytics to gather
+                        insights into voter preferences based on their socio-economic status, caste, local issues, and
+                        various other parameters. Based on the voter sentiment and segments, customized election
+                        campaigns with the most relevant messages and videos were created and pitched to the specific
+                        target groups. Once the campaign was launched, data was then gathered to analyze its
+                        effectiveness and tweak it further according to the response it generates.
+                    </p>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </section><!-- End About Section -->
+
+
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+            <div class="container py-4">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Team 8</span></strong>. All Rights Reserved
+                </div>
+            </div>
+        </footer><!-- End Footer -->
+
+        <div id="preloader"></div>
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+                class="bi bi-arrow-up-short"></i></a>
+
+        <!-- Vendor JS Files -->
+        <script src="../static/vendor/aos/aos.js"></script>
+        <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../static/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="../static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="../static/vendor/php-email-form/validate.js"></script>
+        <script src="../static/vendor/purecounter/purecounter.js"></script>
+        <script src="../static/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="../static/vendor/waypoints/noframework.waypoints.js"></script>
+
+        <!-- Template Main JS File -->
+        <script src="../static/js/main.js"></script>
+
+</body>
+
+</html>
