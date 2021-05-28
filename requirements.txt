@@ -25,7 +25,6 @@ pathlib2==2.3.5
 pbr==5.5.0
 psycopg2==2.8.6
 psycopg2-binary==2.8.6
-setuptools==0.7.3
 scipy==0.14.0
 vader-sentiment==3.2.1.1
 vaderSentiment==3.3.2
